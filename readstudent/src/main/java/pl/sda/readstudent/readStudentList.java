@@ -32,7 +32,8 @@ public class readStudentList {
 
     public static void printf(char letter){
         List<Student> lista_osob = listOfStudents.stream().
-                filter(t->t.getName().charAt(0)==letter).collect(Collectors.toList());
+                filter(t->t.getName().
+                        charAt(0)==letter).collect(Collectors.toList());
         System.out.println(lista_osob.toString());
     }
 
